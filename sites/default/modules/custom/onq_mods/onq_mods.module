@@ -1,0 +1,11 @@
+<?php
+
+function onq_mods_oauthconnector_fetch_field_value_alter(&$response, $info, $context) {
+  $field = @$context['field']['field'];
+  $provider = @$context['provider']->name;
+
+  if ($field == 'email' && $provider == 'google') {
+    $response = strtolower("{$info['given_name']}.{$info['family_name']}@onqdesign.com");
+  }
+  return $response;
+}

@@ -1,0 +1,4 @@
+name = ONQ Mods
+description = Basic scaffold module for site specific mods
+core = 7.x
+version = "7.x-0.1"

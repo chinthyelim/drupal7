@@ -1,0 +1,23 @@
+<?php 
+/**
+ * Used to update canonical url value from the $head output within html.tpl.php
+ *
+ * @see http://api.drupal.org/api/drupal/modules--system--system.api.php/function/hook_html_head_alter/7
+ * @param array $head_elements
+ */
+function pjra_seo_html_head_alter(&$head_elements) {
+  
+  $remove = array(
+    'metatag_canonical',
+  );
+ 
+  $pager = isset($_GET['page']);
+  
+  // Remove canonical url on pagination
+  if ($pager) {
+    foreach (preg_grep('/^drupal_add_html_head_link:canonical:</', array_keys($head_elements)) as $key) {
+      unset($head_elements[$key]);
+    }
+  }
+  
+}

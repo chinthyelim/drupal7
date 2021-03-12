@@ -1,0 +1,24 @@
+name = PJRA Bootstrap Subtheme (BS)
+description = A Bootstrap subtheme
+base theme = bootstrap
+core = 7.x
+
+stylesheets[all][] = css/responsive.css.less
+stylesheets[all][] = css/styles.css.less
+
+scripts[] = js/custom.js
+scripts[] = js/jquery-ui-1.10.3.custom.js
+
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+
+settings[toggle_name] = 0
+settings[toggle_search] = 1
+
+fonts[google_fonts_api][] = "Nixie One&subset=latin#regular"
+fonts[google_fonts_api][] = "Oxygen&subset=latin-ext#regular"

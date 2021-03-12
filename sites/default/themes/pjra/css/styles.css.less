@@ -1,0 +1,911 @@
+// General
+h1 {
+  font: lighter normal 45px/60px 'Nixie One';
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h2, h3, h4 {
+  margin: 0 0 15px 0;
+  font: bold normal 18px 'Nixie One';
+  text-transform: uppercase;
+  color: #4E5756;
+  line-height: 22px;
+}
+
+a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 10px 0;
+  font: normal normal 14px/22px 'Oxygen';
+  color: #494949;
+  //letter-spacing: 40;
+  position: relative;
+  /*background-image: url('/sites/pjra/files/pjra_background.jpg');*/
+}
+.footer {
+  width: auto;
+}
+.bgimg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1870px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+// Micro Clearfix
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 1870px) { /* Specific to this particular image */
+  .bgimg {
+    left: 50%;
+    margin-left: -935px;   /* 50% */
+  }
+}
+
+.page-block-menu {
+  clear: both;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+.menu-a, .menu-b, .menu-c, .menu-d, .menu-e, .menu-f, .menu-g {
+}
+
+
+
+// Main menu for mobile/320px screen
+#page-nav-btn {
+  display: none;
+  clear: both;
+  float: right;
+  background-image: url(/sites/pjra/files/styles/icon-nav.png);
+  width: 103px;
+  height: 40px;
+  //margin-top: 20px;
+  //position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+#top-header {
+  border-bottom: 1px solid #fff;
+  //height: 40px;
+  padding: 20px 0 40px 0;
+  margin-bottom: 30px;
+  .header-container {
+    margin: 0 auto 0 auto;
+    padding: 0 50px 0 50px;
+  }
+}
+.gridimg {
+  position: fixed;
+  left: 50%;
+  top: -3px;
+  margin-left: -935px;
+  width: 1870px;
+  height: 100%;
+  z-index: -1;
+  background: url(/sites/pjra/files/grid.png) repeat center;
+}
+.row {
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0 auto 0 auto;
+  padding: 0 50px 0 50px;
+}
+
+.region-sidebar-second {
+  font: normal normal 14px/17px 'Oxygen';
+  color: #747474;
+  .block-views .views-row {
+    margin-bottom: 20px;
+    overflow: auto;
+  }
+  a {
+    color: #747474;
+  }
+}
+
+#main-content {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  z-index: 998;
+  h1 {
+    z-index: 998;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .block {
+    z-index: 997;
+  }
+}
+
+.region-sidebar-first {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  // Left main menu
+  ul.menu li {
+    background: #6e8782;
+    background: rgba(0, 0, 0, 0.4);
+    a {
+      font: normal normal 15px/20px 'Nixie One';
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 101px;
+      height: 101px;
+      padding: 12px;
+      display: block;
+      &:hover {
+        background-color: transparent;
+        color: #333333;
+      }
+    }
+
+    //&:hover, &.active {
+    //}
+  }
+  ul.menu li.menu-mlid-298 { background: rgba(0,0,0,0.6); }
+  ul.menu li.menu-mlid-366 { background: rgba(0,0,0,0.5); }
+  ul.menu li.menu-mlid-322 { background: rgba(0,0,0,0.4); }
+  ul.menu li.menu-mlid-301 { background: rgba(0,0,0,0.3); }
+  ul.menu li.menu-mlid-302 { background: rgba(0,0,0,0.2); }
+  ul.menu li.active,
+  ul.menu li:hover{
+    background: #cfebe8;
+    background: rgba(255, 255, 255, 0.4);
+    a {
+      color: #000;
+    }
+  }
+}
+
+// Page footer
+#footer-border {
+  width: 55%;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 55px;
+  clear: both;
+}
+
+.footer {
+  font: normal normal 11px 'Oxygen';
+  color: #494949;
+  line-height: 16px;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: none;
+  a {
+    color: #4E5756;
+  }
+}
+
+.logo {
+  float: left;
+}
+
+.front {
+  //background-image: url('/sites/pjra/files/pjra_home_background.jpg');
+  h1 {
+    margin-bottom: 60px;
+  }
+  #top-header {
+    margin-bottom: 90px;
+  }
+  .span3 {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  .span9 {
+    color: #4e5756;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  .region-sidebar-second {
+    line-height: 20px;
+    .views-field-title {
+      font-weight: bold;
+      margin-top: 40px;
+    }
+  }
+  #main-content {
+    background-color: transparent;
+    margin-right: 40px;
+    clear: both;
+    .field-name-body {
+      padding: 30px 10px 10px 0;
+      h2, h3, h4 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.not-front {
+  .span7 h1 {
+    position: absolute;
+    margin: auto auto;
+    padding: 100px 0 0 40px;
+    font-size: 37px;
+    line-height: 40px;
+    max-width: 400px;
+  }
+  #main-content {
+    //min-height: 1000px;
+    //padding-bottom: 40px;
+    .field-name-body {
+      padding: 40px 40px 20px 40px;
+    }
+    .field-type-text {
+      padding: 0 40px 10px 40px;
+    }
+  }
+  .span3 {
+    //min-height: 1040px;
+    background-color: #dbf8f4;
+    background-color: rgba(255,255,255,0.6);
+    .region-sidebar-second {
+      //min-height: 755px;
+      .block-title, #block-block-8 {
+        color: #ffffff;
+        font-size: 22px;
+        line-height: 23px;
+        margin: 0 0 15px 0;
+        padding: 138px 65px 30px 40px;
+        height: 82px;
+      }
+      #block-block-8 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .span9 {
+    background-color: #ffffff;
+    //min-height: 1040px;
+    margin-right: 0;
+    padding: 40px !important;
+    h1 {
+      color: #333333;
+      position: relative;
+      padding: 0 0 20px 0;
+    }
+  }
+  #footer-border {
+    display: none;
+  }
+  .footer {
+    clear: both;
+    width: auto;
+    margin-left: 40px;
+    //position: absolute;
+    bottom: 0;
+  }
+}
+// NEWS PAGE
+// news listing
+.view-pjra-news {
+  //
+  .view-content {
+    .clearfix();
+  }
+  .views-row {
+    width: 40%;
+    float: left;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 40px;
+
+    &:nth-child(2n+3) {
+      clear: both;
+    }
+  }
+
+  //image
+  .views-field-field-news-thumbnail {
+    margin-bottom:15px;
+  }
+}
+
+
+.pagination {
+  clear: both;
+  margin-left: 35px;
+}
+
+// side bar
+.region-sidebar-second {
+
+  .block-title {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 23px;
+    margin: 0 0 15px 0;
+    padding: 138px 65px 30px 40px;
+    // height: 82px;
+    // background-color: #506f88;
+  }
+
+  .views-row {
+    padding: 0;
+    width: 100%;
+  }
+
+  .views-field-field-news-thumbnail {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+  }
+
+}
+// Industry sector page
+.page-node-9 .block-title {
+  background-color: #c6ef62;
+}
+.page-node-18 #block-views-case-studies-block .block-title {
+  background-color: #44506f;
+}
+
+.page-industry-sectors #block-views-case-studies-block .block-title {
+  background-color: #506f88;
+}
+// Mission statement page
+.page-node-12 #block-block-8 {
+  background-color: #f8da9f;
+}
+// Inogen page
+.page-node-15 #block-views-case-studies-block .block-title {
+  background-color: #518d7c;
+}
+// Career list page
+.page-node-32 #block-views-case-studies-block .block-title {
+  background-color: #9da69c;
+}
+// Employee details page
+.page-user {
+  #user-login {
+    margin-top: 100px;
+  }
+  #block-block-8 {
+    background-color: #696683;
+  }
+  .jcarousel-container-horizontal {
+    width: 96%;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .jcarousel-clip-horizontal {
+    width: 95%;
+  }
+  .jcarousel-item-horizontal {
+    padding-left: 0;
+  }
+  .jcarousel-item {
+    border: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 3px;
+    margin-right: 0;
+    a {
+      display: block;
+      z-index: 900;
+      img {
+        z-index: 899;
+      }
+    }
+    a.active {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-image: url('/sites/pjra/files/styles/carousel_active.png');
+      opacity: 0.8;
+      filter: alpha(opacity=80); /* For IE8 and earlier */
+    }
+    a:hover {
+      background: #e8a08b url('/sites/pjra/files/people-hover.png') no-repeat center center;
+    }
+    a:hover img {
+      opacity: 0.3;
+      filter: alpha(opacity=30); /* For IE8 and earlier */
+    }
+  }
+  .jcarousel-prev-horizontal {
+    background-position: 0 0 !important;
+    left: 0px;
+  }
+  .jcarousel-next-horizontal {
+    background-position: 0 0 !important;
+    right: 0;
+  }
+  .jcarousel-prev, .jcarousel-prev:hover {
+    background-image: url('/sites/pjra/files/styles/carousel_nav_left.png');
+    width: 20px;
+    height: 80px;
+    top: 20px;
+  }
+  .jcarousel-next, .jcarousel-next:hover {
+    background-image: url('/sites/pjra/files/styles/carousel_nav_right.png');
+    width: 20px;
+    height: 80px;
+    top: 20px;
+  }
+  .profile {
+    padding: 0 40px 40px 40px;
+    clear: both;
+    .people-title {
+      margin-bottom: 10px;
+      h2 {
+        margin-bottom: 10px;
+        color: #888888;
+      }
+      .title {
+        font-weight: bold;
+      }
+    }
+    .field-people-image {
+      float: right;
+      margin: 0 0 20px 20px;
+    }
+  }
+}
+// Abous Us page
+.page-node-4 #block-block-8 {
+  background-color: #59a462;
+}
+.node-type-case-studies {
+  .block-title {
+    background-color: #6fb8e6;
+  }
+  .span7 {
+    .node-case-studies {
+      margin-bottom: 30px;
+      .field-name-field-project-name,
+      .field-name-field-location,
+      .field-name-field-company {
+        padding: 0 40px 0 40px !important;
+      }
+      .field-name-field-case-study-image {
+        padding: 40px;
+      }
+      .field-name-body {
+        padding: 30px 40px 40px 40px !important;
+        .field-items {
+          border-top: 1px dotted #4e5756;
+          border-bottom: 1px dotted #4e5756;
+          padding: 40px 0 20px 0;
+        }
+      }
+    }
+  }
+}
+// Career details page
+.node-type-careers .span6 {
+  .field-name-field-career-location {
+    margin-top: 40px;
+  }
+  .field-name-body {
+    padding-top: 20px;
+  }
+}
+// Case studies/study
+#block-views-case-study-block,
+#block-views-case-studies-block {
+  .views-row-last {
+    margin-bottom: 0;
+  }
+  .view-content {
+    padding: 20px;
+    .views-field-field-case-study-thumbnail {
+      float: left;
+      margin-right: 20px;
+    }
+    .views-field-view-node {
+      padding-top: 7px;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+//
+.latest-news-homepage {
+  .view-content {
+    padding: 20px;
+  }
+
+  //override overspecific selector
+  .views-row.views-row {
+    margin-bottom: 0;
+  }
+}
+
+//sidebar - latest news & news article
+.latest-news-sidebar, .latest-case-news-sidebar {
+  .view-content {
+    padding: 20px;
+  }
+
+  //image
+  .views-field-field-case-study-thumbnail {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+// Case study & Latest News of homepage
+#block-views-case-study-block,
+#block-views-pjra-news-latest-news-block {
+  width: 415px;
+  .block-title {
+    margin-bottom: 0;
+    padding: 5px 10px 5px 10px;
+    width: 250px;
+    background-color: #7e766f;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .view-content {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+#block-views-pjra-news-latest-news-block {
+  margin-top: 27px;
+
+  .view-content {
+    .clearfix();
+  }
+
+  .views-field-field-news-thumbnail {
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+  }
+
+  #news-show-all {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .views-field-path {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Case studies of right sidebar
+#block-views-case-studies-block {
+  padding-bottom: 15px;
+  .block-title {
+    background-color: #c27561;
+  }
+  .views-row {
+    min-height: 80px;
+    overflow: visible;
+    .views-field {
+      clear: right;
+      .views-field-view-node {
+        margin: auto 95px;
+        position: absolute;
+      }
+    }
+  }
+}
+// List of services on Services page
+#block-views-services-block {
+  padding: 0 40px 40px 40px;
+  .views-row {
+    width: 50%;
+    float: left;
+  }
+  .views-field-title {
+    margin-right: 20px;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px dotted #bfbfbf;
+    a {
+      display: block;
+      span {
+        float: right;
+      }
+    }
+  }
+}
+.view-case-studies {
+  .views-field-title {
+    span { font-weight: bold; }
+  }
+}
+// Case Studies block at bottom of Services details pages
+#block-views-1f9730f5270532622e0717416082bee0 {
+  background-color: #d7e3e2;
+  margin: 0 40px 80px;
+  overflow: auto;
+  line-height: 18px;
+  h2 {
+    margin: 30px 0 0 40px;
+  }
+  .view-case-studies-post-on-service .view-content {
+    margin-top: 20px;
+    .views-row {
+      width: 127px;
+      float: left;
+      .views-field-title {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    }
+    .views-row-odd, .views-row-even {
+      margin: 0 0 40px 40px;
+    }
+  }
+}
+// Content of Career list
+#block-views-careers-block-1 {
+  margin-bottom: 40px;
+  .view-careers {
+    clear: both;
+    .view-content {
+      padding: 0 40px 40px 40px;
+      .views-row-first {
+        border-top: 1px dotted #4e5756;
+      }
+      .views-row {
+        padding: 40px 0 40px 0;
+        border-bottom: 1px dotted #4e5756;
+        .views-field {
+          margin-bottom: 10px;
+        }
+        .views-field-title {
+          color: #4e5756;
+          font-weight: bold;
+          font-size: 16px;
+          padding-bottom: 5px;
+        }
+        .views-field-field-career-excerpt {
+          margin-top: 10px;
+        }
+        .views-field-view-node a {
+          color: #ec902c;
+        }
+      }
+    }
+  }
+}
+// Users block
+#block-views-users-block {
+  .view-content {
+    padding: 20px 40px 0 40px;
+  }
+}
+// Content of Contact Us form
+#node-18 {
+  margin-bottom: 70px;
+  .field-name-body {
+    padding-left: 40px;
+    padding-right: 0;
+    width: 240px;
+    float: left;
+  }
+  #webform-client-form-18 {
+    margin-top: 40px;
+    width: 280px;
+    float: left;
+    #edit-submitted-message, .grippie {
+      width: 255px;
+    }
+    .form-text {
+      width: 240px;
+    }
+    .form-checkboxes {
+      margin: 15px 0 15px 0;
+    }
+    textarea.error {
+      border-color: #B94A48;
+      color: #B94A48;
+    }
+    // Contact form submit button
+    .btn {
+      background-image: url('/sites/pjra/files/styles/btn-contact-submit.png');
+      width: 257px;
+      height: 51px;
+      background-color: #ffffff !important;
+      background-position: 0 !important;
+      position: 0 !important;
+    }
+    .btn:focus, .btn:hover  {
+      background-image: url('/sites/pjra/files/styles/btn-contact-submit.png');
+      background-position: 0 !important;
+      position: 0 !important;
+    }
+  }
+}
+// Blocks that located on right bar
+// #block-block-3 : Contact Us block
+// #block-block-4 : Mission statement block
+// #block-block-5 : Our people block
+// #block-block-6 : About Us block
+// #block-block-8 : dummy block on About Us page next to the right of top header image
+// #block-views-services-post-on-service-block : Right column service highlights
+#block-block-3,
+#block-block-4,
+#block-block-5,
+#block-block-6,
+#block-block-8,
+#block-views-services-post-on-service-block {
+  margin: 0 0 40px 0;
+  padding: 0 40px 0 40px;
+  a {
+    color: #4E5756;
+  }
+  .block-title {
+    color: #8c9191;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 0;
+    height: 40px;
+  }
+}
+#block-block-3 a {
+  color: #e27355;
+  line-height: 22px;
+}
+#block-block-8 {
+  background-color: #ec902c;
+  p {
+    font: bold 24px/28px 'Nixie One';
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+// Industry Sectors views
+.view-industry-sector-taxonomy {
+  padding: 40px 20px 40px 40px;
+  float: left;
+  .view-content {
+    .views-row {
+      margin-bottom: 20px;
+      cursor: pointer;
+      .views-field-name {
+        padding-left: 5px;
+        .field-content {
+          font: bold normal 14px 'Nixie One';
+          //font: bold normal 14px/18px 'Oxygen';
+          text-transform: uppercase;
+        }
+      }
+      .views-field-field-icon,
+      .views-field-field-icon-rollover {
+        float: left;
+        width: 40px;
+      }
+      .views-field-field-icon-rollover {
+        display: none;
+      }
+      .views-field-description ul {
+        margin-left: 5px;
+        li {
+          list-style-type: none;
+          padding-bottom: 10px;
+        }
+      }
+      .views-field-description li:before {
+        content: '> ';
+      }
+    }
+    .views-field-name a:hover {
+      color: #e88f77;
+    }
+    .views-row:hover,
+    .active{
+      color: #e88f77;
+      a {
+        color: #e88f77;
+        text-decoration: none;
+      }
+      .views-field-field-icon {
+        display: none;
+      }
+      .views-field-field-icon-rollover {
+        display: block;
+      }
+    }
+  }
+}
+#block-views-9521fd05fd7df6c1fbdba0808e0cab60 {
+  padding: 40px 20px 40px 40px;
+  float: left;
+  h3 {
+    font: bold normal 18px 'Nixie One';
+    color: #e88f77;
+    margin-bottom: 20px;
+  }
+  .view-industry-sector-taxonomy {
+    padding: 0;
+    .views-row {
+      cursor: default;
+    }
+    .views-row:hover {
+      color: #494949;
+    }
+  }
+}
+
+// Careers view
+.node-careers {
+  .field-name-field-career-header-image {
+    margin-bottom: 40px;
+  }
+  .field-name-body {
+    padding-top: 0 !important;
+  }
+}
+
+// Accordion for Services
+#accordion {
+  margin: 40px 0 40px;
+  clear: both;
+  h3 {
+    padding: 5px 0 20px;
+    color: #494949;
+    border-bottom: 1px dashed #494949;
+    cursor: pointer;
+  }
+  h3:after {
+	  content: url('/sites/pjra/files/styles/accordion_list_title_symbol.png');
+    float: right;
+  }
+  div.ui-accordion-content {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+#node-3 p {
+  color: #494949;
+}

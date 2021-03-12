@@ -1,0 +1,8 @@
+name = PJRA SEO Implementation
+description = Additional SEO functionality
+core = 7.x
+version = 7.x-0.1
+package = PJRA SEO
+
+; Module Files
+files[] = pjra_seo.module
